@@ -4,7 +4,7 @@ import React from 'react';
 
 const Hero = () => {
   return (
-    <section className="bg-blue-800 text-white py-20">
+    <section className="bg-blue-800 text-white py-20 ">
       <div className="container mx-auto text-center">
         <h1 className="text-4xl md:text-6xl font-bold mb-4">
           Welcome to Electron Energy

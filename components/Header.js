@@ -5,7 +5,7 @@ import Link from 'next/link';
 
 const Header = () => {
   return (
-    <header className="bg-blue-500 py-4">
+    <header className="bg-blue-500 p-4">
       <nav className="container mx-auto flex items-center justify-between">
         <Link href="/">
           <p className="text-white text-2xl font-bold">Electron Energy</p>
