@@ -1,4 +1,5 @@
 // src/components/EducationalContent.js
+import Link from 'next/link'
 
 import React from 'react';
 
@@ -18,12 +19,12 @@ const EducationalContent = () => {
             <p className="text-gray-600">
               Discover how solar energy can lower your energy bills and reduce your carbon footprint.
             </p>
-            <a
+            <Link
               href="/benefits-of-solar-power" // Replace with actual article URL
               className="text-blue-500 hover:underline mt-4 inline-block"
             >
               Read More
-            </a>
+            </Link>
           </div>
           {/* Article 2 */}
           <div className="bg-white p-6 rounded-lg shadow-md">
@@ -33,12 +34,12 @@ const EducationalContent = () => {
             <p className="text-gray-600">
               Get step-by-step instructions on how to install solar panels for your home or business.
             </p>
-            <a
+            <Link
               href="/solar-panel-installation-guide" // Replace with actual article URL
               className="text-blue-500 hover:underline mt-4 inline-block"
             >
               Read More
-            </a>
+            </Link>
           </div>
           {/* Add more articles here */}
         </div>
