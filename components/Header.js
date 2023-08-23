@@ -8,7 +8,7 @@ const Header = () => {
     <header className="bg-blue-500 p-4">
       <nav className="container mx-auto flex items-center justify-between">
         <Link href="/">
-          <p className="text-white text-2xl font-bold">Electron Energy</p>
+          <p className="text-white text-2xl font-bold">ELECTRON ENERGY</p>
         </Link>
         <ul className="flex space-x-4">
           <li>

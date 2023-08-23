@@ -1,6 +1,5 @@
-// src/components/WhySolar.js
-
 import React from 'react';
+import { LocalFlorist, AttachMoney, FlashOn } from '@mui/icons-material'; // Import Material-UI icons
 
 const WhySolar = () => {
   return (
@@ -13,20 +12,7 @@ const WhySolar = () => {
           {/* Reason 1 */}
           <div className="flex items-center">
             <div className="bg-yellow-500 text-white w-12 h-12 flex items-center justify-center rounded-full mr-4">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                className="h-6 w-6"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth="2"
-                  d="M5 13l4 4L19 7"
-                />
-              </svg>
+              <LocalFlorist fontSize="inherit" /> {/* Use LocalFlorist icon */}
             </div>
             <div>
               <h3 className="text-lg font-semibold mb-2">Clean Energy</h3>
@@ -38,20 +24,7 @@ const WhySolar = () => {
           {/* Reason 2 */}
           <div className="flex items-center">
             <div className="bg-yellow-500 text-white w-12 h-12 flex items-center justify-center rounded-full mr-4">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                className="h-6 w-6"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth="2"
-                  d="M9 5l7 7-7 7"
-                />
-              </svg>
+              <AttachMoney fontSize="inherit" /> {/* Use AttachMoney icon */}
             </div>
             <div>
               <h3 className="text-lg font-semibold mb-2">Cost Savings</h3>
@@ -63,20 +36,7 @@ const WhySolar = () => {
           {/* Reason 3 */}
           <div className="flex items-center">
             <div className="bg-yellow-500 text-white w-12 h-12 flex items-center justify-center rounded-full mr-4">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                className="h-6 w-6"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth="2"
-                  d="M13 10V3L4 14h7v7l9-11h-7z"
-                />
-              </svg>
+              <FlashOn fontSize="inherit" /> {/* Use FlashOn icon */}
             </div>
             <div>
               <h3 className="text-lg font-semibold mb-2">Energy Independence</h3>

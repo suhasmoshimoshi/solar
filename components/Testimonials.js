@@ -3,23 +3,26 @@
 import React from 'react';
 
 const Testimonials = () => {
-    const testimonials = [
-        {
-          name: 'John Doe',
-          title: 'Homeowner',
-          text: 'Electron Energy helped me make the switch to solar energy with their efficient installation and friendly team.',
-        },
-        {
-          name: 'Jane Smith',
-          title: 'Business Owner',
-          text: 'The team at Electron Energy exceeded my expectations in delivering a reliable and cost-effective solar solution for my business.',
-        },
-        {
-          name: 'Michael Johnson',
-          title: 'Environmental Advocate',
-          text: 'Im impressed by the commitment of Electron Energy to promoting sustainable energy solutions and reducing carbon emissions.',
-        },
-      ];
+  const testimonials = [
+    {
+      name: 'Gagan',
+      title: 'Homeowner',
+      text: 'Electron Energy helped me make the switch to solar energy with their efficient installation and friendly team.',
+    },
+    {
+      name: 'Smaran',
+      title: 'Business Owner',
+      text: 'The team at Electron Energy exceeded my expectations in delivering a reliable and cost-effective solar solution for my business.',
+    },
+    {
+      name: 'Sumanth',
+      title: 'Environmental Advocate',
+      text: 'I\'m impressed by the commitment of Electron Energy to promoting sustainable energy solutions and reducing carbon emissions.',
+    },
+  ];
+  
+  // Use testimonials data in your component
+  
       
   return (
     <section className="bg-white py-16">

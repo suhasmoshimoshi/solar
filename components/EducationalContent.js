@@ -19,7 +19,7 @@ const EducationalContent = () => {
               Discover how solar energy can lower your energy bills and reduce your carbon footprint.
             </p>
             <a
-              href="/articles/benefits-of-solar-power" // Replace with actual article URL
+              href="/benefits-of-solar-power" // Replace with actual article URL
               className="text-blue-500 hover:underline mt-4 inline-block"
             >
               Read More
@@ -34,7 +34,7 @@ const EducationalContent = () => {
               Get step-by-step instructions on how to install solar panels for your home or business.
             </p>
             <a
-              href="/articles/solar-panel-installation-guide" // Replace with actual article URL
+              href="/solar-panel-installation-guide" // Replace with actual article URL
               className="text-blue-500 hover:underline mt-4 inline-block"
             >
               Read More
