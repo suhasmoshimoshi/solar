@@ -1,25 +1,40 @@
 import React, { useState } from 'react';
- // Update the path to your firebase.js file
+import axios from 'axios'; // Import Axios
 
 const ContactForm = () => {
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
+  const [phoneNumber, setPhoneNumber] = useState('');
   const [message, setMessage] = useState('');
+  const [successMessage, setSuccessMessage] = useState('');
+  const [errorMessage, setErrorMessage] = useState('');
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
 
-    // Push the form data to Firebase
-    firebase.database().ref('contacts').push({
-      name,
-      email,
-      message,
-    });
+    try {
+      const response = await axios.post('/api/contact', {
+        name,
+        email,
+        phoneNumber,
+      });
 
-    // Clear form inputs after submission
-    setName('');
-    setEmail('');
-    setMessage('');
+      if (response.status === 200) {
+        setSuccessMessage('Message sent successfully!');
+        setName('');
+        setEmail('');
+        setPhoneNumber('');
+        setMessage('');
+        setErrorMessage('');
+      } else {
+        setErrorMessage(response.data.error || 'Something went wrong.');
+        setSuccessMessage('');
+      }
+    } catch (error) {
+      console.error(error);
+      setErrorMessage('An error occurred while sending the message.');
+      setSuccessMessage('');
+    }
   };
 
   return (
@@ -27,6 +42,8 @@ const ContactForm = () => {
       <div className="container mx-auto text-center">
         <h2 className="text-3xl md:text-4xl font-bold mb-8">Contact Us</h2>
         <div className="max-w-md mx-auto">
+          {successMessage && <p className="text-green-500">{successMessage}</p>}
+          {errorMessage && <p className="text-red-500">{errorMessage}</p>}
           <form className="grid grid-cols-1 gap-4" onSubmit={handleSubmit}>
             <input
               type="text"
@@ -34,6 +51,7 @@ const ContactForm = () => {
               className="p-3 rounded-md bg-white shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
               value={name}
               onChange={(e) => setName(e.target.value)}
+              required
             />
             <input
               type="email"
@@ -41,6 +59,14 @@ const ContactForm = () => {
               className="p-3 rounded-md bg-white shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
+              required
+            />
+            <input
+              type="tel"
+              placeholder="Your Phone Number"
+              className="p-3 rounded-md bg-white shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
+              value={phoneNumber}
+              onChange={(e) => setPhoneNumber(e.target.value)}
             />
             <textarea
               rows="4"
@@ -48,6 +74,7 @@ const ContactForm = () => {
               className="p-3 rounded-md bg-white shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
               value={message}
               onChange={(e) => setMessage(e.target.value)}
+              required
             ></textarea>
             <button
               type="submit"
