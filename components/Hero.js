@@ -3,13 +3,16 @@
 import React from 'react';
 
 const Hero = () => {
+  const sectionStyle = {
+    backgroundImage: `url(${'./solarbanner.png'})`,
+  };
   return (
-    <section className="bg-blue-800 text-white py-20 ">
-      <div className="container mx-auto text-center">
+    <section className=" text-white py-20  bg-no-repeat bg-cover rounded   "  style={sectionStyle}>
+      <div className="container mx-auto text-center py-[100px]">
         <h1 className="text-4xl md:text-6xl font-bold mb-4">
           Welcome to Electron Energy
         </h1>
-        <p className="text-lg md:text-xl mb-8">
+        <p className="text-lg md:text-xl mb-10">
           Powering the future with clean and renewable solar energy solutions.
         </p>
         <a
