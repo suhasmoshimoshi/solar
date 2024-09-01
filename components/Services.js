@@ -26,7 +26,7 @@ const Services = () => {
               Commercial Solar
             </h3>
             <p className="text-gray-600 hover:text-gray-800">
-              Reduce your business's energy costs and carbon footprint with our solar solutions.
+              Reduce your business&apos;s energy costs and carbon footprint with our solar solutions.
             </p>
             <div className="mt-4">
               <span className="inline-block w-12 h-1 bg-blue-600"></span>

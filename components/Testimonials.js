@@ -32,7 +32,7 @@ const Testimonials = () => {
               className="bg-white p-8 rounded-xl shadow-lg border-t-4 border-blue-500"
             >
               <p className="text-lg italic text-gray-700 mb-6">
-                "{testimonial.text}"
+              &quot;{testimonial.text}&quot;
               </p>
               <div className="text-left">
                 <p className="text-xl font-bold text-gray-900">{testimonial.name}</p>
