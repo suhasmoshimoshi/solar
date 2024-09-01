@@ -22,7 +22,7 @@ const Home = () => {
       <WhySolar />
       <Projects />
       <CallToAction />
-      <EducationalContent/>
+      {/* <EducationalContent/> */}
       <ContactForm />
       <Testimonials />
        
