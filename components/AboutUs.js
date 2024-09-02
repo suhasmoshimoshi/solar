@@ -30,7 +30,7 @@ const AboutUs = () => {
             <FaProjectDiagram className="text-6xl text-green-500 mb-6" />
             <h3 className="text-2xl font-semibold text-gray-800 mb-4">Experienced Team</h3>
             <p className="text-lg text-gray-600">
-              Our team has a cumulative experience of over 200 years in the solar photovoltaic life cycle, ensuring reliable and efficient energy output for our customers. We also provide owner’s engineering and project management support for large-scale solar projects, both on-grid and off-grid.
+              Our team has a cumulative experience of over 20 years in the solar photovoltaic life cycle, ensuring reliable and efficient energy output for our customers. We also provide owner’s engineering and project management support for large-scale solar projects, both on-grid and off-grid.
             </p>
           </div>
           {/* Section 4 */}
