@@ -5,17 +5,17 @@ const Testimonials = () => {
     {
       name: 'Gagan',
       title: 'Client',
-      text: 'Electron Energy helped me make the switch to solar energy with their efficient installation and friendly team.',
+      text: 'Gurtechno Inc helped me make the switch to solar energy with their efficient installation and friendly team.',
     },
     {
       name: 'Smaran',
       title: 'Client',
-      text: 'The team at Electron Energy exceeded my expectations in delivering a reliable and cost-effective solar solution for my business.',
+      text: 'The team at Gurtechno Inc exceeded my expectations in delivering a reliable and cost-effective solar solution for my business.',
     },
     {
       name: 'Sumanth',
       title: 'Environmental Advocate',
-      text: 'I\'m impressed by the commitment of Electron Energy to promoting sustainable energy solutions and reducing carbon emissions.',
+      text: 'I\'m impressed by the commitment of Gurtechno Inc to promoting sustainable energy solutions and reducing carbon emissions.',
     },
   ];
 
